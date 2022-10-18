@@ -1,4 +1,4 @@
-baseURL = 'https://hueper.github.io/forms'
+baseURL = 'https://hueper.github.io/'
 languageCode = 'en-us'
 title = 'Tagging-Guideline'
 theme = 'digitalgarden'
