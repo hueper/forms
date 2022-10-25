@@ -1,6 +1,6 @@
 baseURL = 'https://hueper.github.io/forms'
 languageCode = 'en-us'
-title = 'Tagging-Guideline'
+title = 'Tagging-Guide'
 theme = 'digitalgarden'
 
 [menu]

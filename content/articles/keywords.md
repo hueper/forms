@@ -2,35 +2,69 @@
 title: keywords
 date: 2022-10-25
 ---
+- [Auszeichnung](#auszeichnung)
+  - [Keyword-Titel](#keyword-titel)
+    - [ts\_meta\_keywords\_heading](#ts_meta_keywords_heading)
+  - [Keywords](#keywords)
+    - [ts\_meta\_keyword](#ts_meta_keyword)
+- [Mapping](#mapping)
+  - [PDF](#pdf)
+  - [TeX](#tex)
+  - [HTML](#html)
+  - [EPUB](#epub)
+  - [BITS (XML)](#bits-xml)
+  - [TEI (XML)](#tei-xml)
+  - [Atypon (XML)](#atypon-xml)
+  - [Manifold](#manifold)
 
-Create a new hugo website or open your existing hugo site.
+# Auszeichnung
 
-#### Add the theme to your hugo site
+Keyword-Blöcke bestehen aus einem Keyword-Titel und den Keywords selbst.
 
-Use as a git submodule:
+## Keyword-Titel
+### ts\_meta\_keywords\_heading
+Der Paragraph, in dem der Keyword-Titel steht, wird mit **ts\_meta\_keywords\_heading** ausgezeichnet.
 
-```sh
-git submodule add https://github.com/apvarun/digital-garden-hugo-theme.git themes/digitalgarden
+Ihm folgt der Paragraph, in dem die Keywords stehen.
+![Tagging - ts_meta_keywords_heading](/forms/img/tagging-ts_meta_keywords_heading.jpg)
+
+## Keywords
+### ts\_meta\_keyword
+Die Keywords werden mit **ts\_meta\_keyword** ausgezeichnet:
+![Tagging - ts_meta_keyword](/forms/img/tagging-ts_meta_keyword.jpg)
+
+# Mapping
+## PDF
+![PDF - ts_meta_keyword](/forms/img/pdf-ts_meta_keyword.jpg)
+## TeX
+```tex
+\tpKeywordsTitle{Keyword-Titel}
+\tpKeywords{Open Science Principles, Open Access, Digital Methods, Open Software, Open Source}
 ```
-
-Clone the repository (one-off, updating the theme may be harder later): 
-
-```sh
-git clone https://github.com/apvarun/digital-garden-hugo-theme.git themes/digitalgarden
+## HTML
+```html
+<h2 class="tsmetakeywordsheading">Keyword-Titel</h2>
+<p class="tsmetakeyword">
+    Open Science Principles, Open Access, Digital Methods, Open Software, Open Source
+</p>
 ```
-
-#### Setup
-
-1. Copy `package.json`, `package-lock.json` and `tailwind.config.js` files from the theme/digitalgarden folder to the root folder of your the website
-2. Run `npm install` to install required packages for theme
-3. Run `npm i -g postcss-cli` to use PostCSS with Hugo build
-4. Set `theme = 'digitalgarden'` in config.toml
-5. Run `npm run dev` to start your local server
-
-When deploying to services like Netlify or Vercel, use the following command for building your site:
-
-```sh
-npm i -g postcss-cli && npm run build
+## EPUB
+```html
+<h2 class="tsmetakeywordsheading">Keyword-Titel</h2>
+<p class="tsmetakeyword">
+    Open Science Principles, Open Access, Digital Methods, Open Software, Open Source
+</p>
 ```
-
-→ [Understanding the theme structure](/articles/structure)
+## BITS (XML)
+```xml
+<kwd-group>
+    <kwd>Open Science Principles</kwd>
+    <kwd>Open Access</kwd>
+    <kwd>Digital Methods</kwd>
+    <kwd>Open Software</kwd>
+    <kwd>Open Source</kwd>
+</kwd-group>
+```
+## TEI (XML)
+## Atypon (XML)
+## Manifold

@@ -1,7 +1,7 @@
 ---
 title: abstracts
 date: 2022-10-25
-description: "Abstracts bestehen aus einem Abstract-Titel und dem Abstract selbst."
+description: "Abstract-Blöcke bestehen aus einem Abstract-Titel und dem Abstract selbst."
 ---
 - [Auszeichnung](#auszeichnung)
   - [Abstract-Titel](#abstract-titel)
@@ -10,6 +10,7 @@ description: "Abstracts bestehen aus einem Abstract-Titel und dem Abstract selbs
     - [ts\_abstracts](#ts_abstracts)
 - [Mapping](#mapping)
   - [PDF](#pdf)
+  - [TeX](#tex)
   - [HTML](#html)
   - [EPUB](#epub)
   - [BITS (XML)](#bits-xml)
@@ -19,7 +20,7 @@ description: "Abstracts bestehen aus einem Abstract-Titel und dem Abstract selbs
 
 # Auszeichnung
 
-Abstracts bestehen aus einem [Abstract-Titel](/articles/ts_abstracts_heading) und dem [Abstract](/articles/ts_abstracts) selbst.
+Abstract-Blöcke bestehen aus einem [Abstract-Titel](/articles/ts_abstracts_heading) und dem [Abstract](/articles/ts_abstracts) selbst.
 
 ## Abstract-Titel
 ### ts\_abstracts\_heading
@@ -36,6 +37,11 @@ Das Abstract wird mit **ts\_abstracts** ausgezeichnet:
 # Mapping
 ## PDF
 ![PDF - ts_abstracts](/forms/img/pdf-ts_abstracts.jpg)
+## TeX
+```tex
+\tpAbstractTitle{Abstract-Titel}
+\tpAbstract{Abstract mit Hervorhebungen}
+```
 ## HTML
 ```html
 <h2 class="tsabstractsheading">Abstract-Titel</h2>
@@ -51,7 +57,7 @@ Das Abstract wird mit **ts\_abstracts** ausgezeichnet:
 </p>
 ```
 ## BITS (XML)
-```XML
+```xml
 <abstract>
     <title>Summary</title>
     <p>
@@ -62,6 +68,3 @@ Das Abstract wird mit **ts\_abstracts** ausgezeichnet:
 ## TEI (XML)
 ## Atypon (XML)
 ## Manifold
-
-
-→ [Understanding the theme structure](/articles/structure)
