@@ -1,36 +1,67 @@
 ---
 title: abstracts
-date: 2021-12-19
+date: 2022-10-25
+description: "Abstracts bestehen aus einem Abstract-Titel und dem Abstract selbst."
 ---
+- [Auszeichnung](#auszeichnung)
+  - [Abstract-Titel](#abstract-titel)
+    - [ts\_abstracts\_heading](#ts_abstracts_heading)
+  - [Abstract](#abstract)
+    - [ts\_abstracts](#ts_abstracts)
+- [Mapping](#mapping)
+  - [PDF](#pdf)
+  - [HTML](#html)
+  - [EPUB](#epub)
+  - [BITS (XML)](#bits-xml)
+  - [TEI (XML)](#tei-xml)
+  - [Atypon (XML)](#atypon-xml)
+  - [Manifold](#manifold)
 
-Create a new hugo website or open your existing hugo site.
+# Auszeichnung
 
-#### Add the theme to your hugo site
+Abstracts bestehen aus einem [Abstract-Titel](/articles/ts_abstracts_heading) und dem [Abstract](/articles/ts_abstracts) selbst.
 
-Use as a git submodule:
+## Abstract-Titel
+### ts\_abstracts\_heading
+Der Paragraph, in dem der Abstract-Titel steht, wird mit **ts\_abstracts\_heading** ausgezeichnet.
 
-```sh
-git submodule add https://github.com/apvarun/digital-garden-hugo-theme.git themes/digitalgarden
+Ihm folgt der Paragraph, in dem das Abstract steht.
+![Tagging - ts_abstracts_heading](../../resources/_gen/images/tagging-ts_abstracts_heading.jpg)
+
+## Abstract
+### ts\_abstracts
+Das Abstract wird mit **ts\_abstracts** ausgezeichnet:
+![Tagging - ts_abstracts](../../resources/_gen/images/tagging-ts_abstracts.jpg)
+
+# Mapping
+## PDF
+![PDF - ts_abstracts](../../resources/_gen/images/pdf-ts_abstracts.jpg)
+## HTML
+```html
+<h2 class="tsabstractsheading">Abstract-Titel</h2>
+<p class="tsabstracts">
+    Abstract <em>mit</em> <strong>Hervorhebungen</strong>
+</p>
 ```
-
-Clone the repository (one-off, updating the theme may be harder later): 
-
-```sh
-git clone https://github.com/apvarun/digital-garden-hugo-theme.git themes/digitalgarden
+## EPUB
+```html
+<h2 class="tsabstractsheading">Abstract-Titel</h2>
+<p class="tsabstracts">
+    Abstract <em>mit</em> <strong>Hervorhebungen</strong>
+</p>
 ```
-
-#### Setup
-
-1. Copy `package.json`, `package-lock.json` and `tailwind.config.js` files from the theme/digitalgarden folder to the root folder of your the website
-2. Run `npm install` to install required packages for theme
-3. Run `npm i -g postcss-cli` to use PostCSS with Hugo build
-4. Set `theme = 'digitalgarden'` in config.toml
-5. Run `npm run dev` to start your local server
-
-When deploying to services like Netlify or Vercel, use the following command for building your site:
-
-```sh
-npm i -g postcss-cli && npm run build
+## BITS (XML)
+```XML
+<abstract>
+    <title>Summary</title>
+    <p>
+        Abstract <italic>mit</italic> <bold>Hervorhebungen</bold>
+    </p>
+</abstract>
 ```
+## TEI (XML)
+## Atypon (XML)
+## Manifold
+
 
 → [Understanding the theme structure](/articles/structure)

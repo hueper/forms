@@ -44,7 +44,7 @@
       <h1 class="!mb-2">{{ $title }}</h1>
 
 	  {{ if .Date }}
-      <p class="text-sm text-slate-500 !mb-8"> Planted {{ $date }}
+      <p class="text-sm text-slate-500 !mb-8"> Last update: {{ $date }}
 		{{ if ne $lastmod $date}}
 			<br/> Pruned {{ .Lastmod.Format "January 2, 2006" }}
         {{ end }}
