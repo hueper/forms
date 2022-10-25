@@ -26,16 +26,16 @@ Abstracts bestehen aus einem [Abstract-Titel](/articles/ts_abstracts_heading) un
 Der Paragraph, in dem der Abstract-Titel steht, wird mit **ts\_abstracts\_heading** ausgezeichnet.
 
 Ihm folgt der Paragraph, in dem das Abstract steht.
-![Tagging - ts_abstracts_heading](../../resources/_gen/images/tagging-ts_abstracts_heading.jpg)
+![Tagging - ts_abstracts_heading](/img/tagging-ts_abstracts_heading.jpg)
 
 ## Abstract
 ### ts\_abstracts
 Das Abstract wird mit **ts\_abstracts** ausgezeichnet:
-![Tagging - ts_abstracts](../../resources/_gen/images/tagging-ts_abstracts.jpg)
+![Tagging - ts_abstracts](/img/tagging-ts_abstracts.jpg)
 
 # Mapping
 ## PDF
-![PDF - ts_abstracts](../../resources/_gen/images/pdf-ts_abstracts.jpg)
+![PDF - ts_abstracts](/img/pdf-ts_abstracts.jpg)
 ## HTML
 ```html
 <h2 class="tsabstractsheading">Abstract-Titel</h2>
